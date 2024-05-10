@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Color Changer</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.0s ease-in-out;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif; /* Change 'Arial' to your cool font */
+    font-size: 60px;
+    color: #333;
+}
+
+</style>
+</head>
+<body>
+     <div class="container">
+        <h1>FLASHBANG</h1>
+    </div>
+<script>
+  setInterval(function() {
+    var body = document.querySelector('body');
+    if (body.style.backgroundColor === 'white') {
+      body.style.backgroundColor = 'black';
+    } else {
+      body.style.backgroundColor = 'white';
+    }
+  }, 20);
+</script>
+
+
+</body>
+</html>
